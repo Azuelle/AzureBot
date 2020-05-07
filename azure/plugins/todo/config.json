@@ -1,0 +1,27 @@
+{
+    "arg_aliases": {
+        "add": [
+            "add",
+            "a"
+        ],
+        "del": [
+            "del",
+            "remove",
+            "delete",
+            "d",
+            "r"
+        ],
+        "list": [
+            "list",
+            "show",
+            "l"
+        ],
+        "clear": [
+            "clear",
+            "removeall",
+            "deleteall",
+            "delall",
+            "c"
+        ]
+    }
+}
