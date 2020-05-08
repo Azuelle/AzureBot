@@ -1,10 +1,9 @@
 from nonebot import on_request, RequestSession
 
-__plugin_name__ = 'AutoAccept'
-__plugin_usage__ = r"""
-AutoAccept
-
-自动接受好友请求/群聊邀请
+__plugin_name__ = 'AutoAccept / 自动接受'
+__plugin_usage__ = r"""AutoAccept <v1>
+-
+自动接受好友请求 / 群聊邀请
 """
 
 

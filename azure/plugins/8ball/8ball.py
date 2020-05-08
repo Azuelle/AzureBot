@@ -6,12 +6,21 @@
 from nonebot import on_command, CommandSession
 import random
 
-result = ['大概',
-          '那肯定',
-          '不知道',
-          '或许',
-          '我觉得不太对',
-          '我觉得确实']
+# nonebot plugin info
+__plugin_name__ = '8ball'
+__plugin_usage__ = r"""8ball <v0>
+-
+指令            8ball
+别名            answer / ans / getans / getanswer / magic8ball
+参数
+[statement]     - 你的问题（是/否）
+"""
+
+result = ['不可能',
+          '不太可能',
+          '也许',
+          '很可能',
+          '那肯定']
 
 # main command
 @on_command('8ball', aliases=('answer', 'ans', 'getans', 'getanswer', 'magic8ball'), only_to_me=False)

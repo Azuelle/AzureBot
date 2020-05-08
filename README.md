@@ -1,2 +1,6 @@
 # AzureBot
-Just a chatbot
+Just a chatbot.
+
+## Commands
+- Todo
+- 8ball
