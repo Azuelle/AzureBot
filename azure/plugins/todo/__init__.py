@@ -153,7 +153,7 @@ async def full_list(entries: list, session):
     fullstr = '现在你的 todo list 上还有这些玩意儿\n'
     for entry in entries:
         tmp_index = tmp_index+1
-        fullstr = fullstr + '[{}] - {}\n'.format(tmp_index, entry)
+        fullstr = fullstr + '[{}] {}\n'.format(tmp_index, entry)
     await session.send(fullstr)
 
 
