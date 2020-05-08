@@ -15,7 +15,7 @@ from .getlocal import getstatnow
 from .getlocal import statnow_ad
 
 # nonebot plugin info
-__plugin_name__ = 'Todo / 待办'
+__plugin_name__ = 'todo'
 __plugin_usage__ = r"""Todo <v1>
 -
 指令            todo

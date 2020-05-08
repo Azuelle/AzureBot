@@ -2,7 +2,7 @@ import nonebot
 from nonebot import on_command, CommandSession
 
 # nonebot plugin info
-__plugin_name__ = 'Usage / 帮助'
+__plugin_name__ = 'usage'
 __plugin_usage__ = r"""Usage <v1>
 -
 指令            usage
