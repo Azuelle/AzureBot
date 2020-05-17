@@ -52,7 +52,11 @@ async def decrypt(session: CommandSession):
     session.state['en'] = session.current_arg_text.strip()
     en = session.get('en', prompt='你倒是告诉咱要解密什么嘛 不说咱也不知道呀（')
 
-    await session.send('解密完了 如果有乱码啥的 大概是密码过期了\n' + await strdec(en, session))
+    try:
+        org = await strdec(en, session)
+    except:
+        await session.finish('解不出啊……要不就是你在瞎搞 要不就是密码过期了')
+    await session.send('解密完了（如果有乱码啥的 大概是密码过期了）\n' + org)
 
 
 @on_command('revoke', only_to_me=False, permission=permission.SUPERUSER)
