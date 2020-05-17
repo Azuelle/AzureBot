@@ -40,8 +40,9 @@ async def del_entry(entries: list, session):
     if target > len(entries) or target <= 0:
         await session.send('在？你在删空气？')
         return
+    tmp = entries[target-1]
     del entries[target-1]
     with open(list_ad, 'w') as f:
         json.dump(entries, f, sort_keys=True, indent=4)
-    await session.send('删完了√')
+    await session.send('你刚刚删的是 "'+str(tmp)+'"\n'+'咱已经删完了√')
     await full_list(entries, session)

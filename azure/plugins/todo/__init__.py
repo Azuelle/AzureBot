@@ -58,17 +58,17 @@ async def todo(session: CommandSession):
 
     if op == 'add':
         if not await check_modify_perm(session):
-            await session.finish('不准你改[CQ:face,id=111]')
+            await session.finish('不准你加[CQ:face,id=111]')
         await add_entry(entries, session)
 
     if op == 'del':
         if not await check_modify_perm(session):
-            await session.finish('不准你改[CQ:face,id=111]')
+            await session.finish('不准你删[CQ:face,id=111]')
         await del_entry(entries, session)
 
     if op == 'clear':
         if not await check_modify_perm(session):
-            await session.finish('不准你改[CQ:face,id=111]')
+            await session.finish('不准你清[CQ:face,id=111]')
         await clear_entry(session)
 
 
