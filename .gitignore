@@ -1,3 +1,4 @@
 __pycache__
 azure/plugins/todo/azure_todo.json
 azure/plugins/todo/statnow.txt
+azure/plugins/*/config.json
