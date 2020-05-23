@@ -19,7 +19,7 @@ __plugin_name__ = 'todo'
 __plugin_usage__ = r"""Todo <v1>
 -
 指令            todo
-别名            todolist / read
+别名            todolist
 参数
 <空>            - 默认为 list
                   详见对应参数 
@@ -44,7 +44,7 @@ clear [index]   - 清除所有项目
 """
 
 # main command
-@on_command('todo', aliases=('todolist', 'read'), only_to_me=False)
+@on_command('todo', aliases=('todolist'), only_to_me=False)
 async def todo(session: CommandSession):
     entries = await getlist(session)
 
