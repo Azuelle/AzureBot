@@ -5,3 +5,5 @@ Just a chatbot.
 - Todo
 - 8ball
 - Usage
+- Encrypt&Decrypt
+- Barcode Name Generator
